@@ -3,7 +3,6 @@ require 'mkmf'
 if File.exist?(`which uuid-config`.chomp)
   $CFLAGS << " -Wall " << `uuid-config --cflags`.chomp
   $LDFLAGS << " " << `uuid-config --ldflags`.chomp
-  $LDFLAGS << " /usr/lib/libossp-uuid.so.16"
 end
 
 if !have_library('uuid')
