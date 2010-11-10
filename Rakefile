@@ -3,13 +3,16 @@ require 'rake/gempackagetask'
 
 spec = Gem::Specification.new do |s|  
   s.name    = "dudemeister-uuid4r"
-  s.version = "0.1.1"
-  s.author  = "Daigo Moriwaki"
+  s.version = "0.1.3"
+  s.authors = ["Daigo Moriwaki", "Stefan Kaes", "Ali Jelveh"]
   s.email   = "daigo@debian.org"
   s.rubyforge_project = "uuid4r"
   s.platform = Gem::Platform::RUBY
   s.summary = "This generates and parses UUID, based on OSSP uuid C library."
   s.description = <<-EOF
+    
+    Contains make configuration changes since this thing is a bitch to compile correclty.
+    
     This library generates and parses Universally Unique Identifier (UUID),
     based on OSSP uuid C library. So, libossp-uuid library is pre-required.
     OSSP uuid (http://www.ossp.org/pkg/lib/uuid/) is a ISO-C:1999 application
